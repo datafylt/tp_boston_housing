@@ -11,6 +11,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Your ML workflow goes here
+          sudo apt-get install python3-dev
+          pip install pygit2
           pip install -r requirements.txt
           pip install dvc==2.5.4
           pip install dvc[gdrive]
