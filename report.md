@@ -10,3 +10,7 @@ R-squared: 0.7
 MAE:  3.2 
 RMSE:  4.9 
 R-squared: 0.7
+## Metriques:
+MAE:  3.2 
+RMSE:  4.9 
+R-squared: 0.7
