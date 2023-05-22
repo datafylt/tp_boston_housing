@@ -3,5 +3,5 @@ scikit-learn
 matplotlib
 seaborn
 numpy
-
+dvc==2.55.0
  

@@ -1,38 +1,26 @@
 name: model-supervisé RL
-
-on:
-  push:
-
+on: [push]
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest]
     container: docker://dvcorg/cml-py3:latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
+      - uses: actions/checkout@v2
+      - name: cml_run
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          GDRIVE_CREDENTIALS_DATA : ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
-          apt-get update
-          apt-get install -y python3-dev
-          pip install pygit2
-          pip install -r requirements.txt
-          pip install dvc==2.5.4
-          pip install 'dvc[gdrive]'
-
-      - name: Pull DVC data
-        run: dvc pull boston.csv
-
-      - name: Run ML script
-        run: python Boston_regression.py
-
-      - name: Generate CML report
-        run: |
+          # Your ML workflow goes here
+          !pip install -r requirements.txt
+          dvc pull boston.csv
+          python Boston_regression.py
+          # Write your CML report
           echo "## Metriques:" >> report.md
           cat metrics.txt >> report.md
           git config --global user.email "marzaq6@gmail.com"
           git config --global user.name "MarzaqMed"
           git add report.md metrics.txt
-          git commit -m "Add reports"
-          git push
+          git commit -m "reports"
+          git fetch
+          git push 
