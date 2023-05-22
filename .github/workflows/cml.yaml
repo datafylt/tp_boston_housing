@@ -12,7 +12,7 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
-          pip install 'dvc==2.55.0' 'dvc[gdrive]'
+          pip install 'dvc==2.54.0' 'dvc[gdrive]'
           dvc pull boston.csv
           python Boston_regression.py
           # Write your CML report
