@@ -1,4 +1,5 @@
 [core]
     remote = mondataremote
+    autostage = true
 ['remote "mondataremote"']
-    url = gdrive://drive.google.com/drive/folders/1SbtJR8tm5RNVt8jSMohHYaWCOKHXzEhU
+    url = gdrive://1SbtJR8tm5RNVt8jSMohHYaWCOKHXzEhU
