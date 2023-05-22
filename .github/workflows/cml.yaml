@@ -12,6 +12,9 @@ jobs:
           GDRIVE_CREDENTIALS_DATA : ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
           # Your ML workflow goes here
+          apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+          apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA16FCBCA621E701
+          apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EFFAF4443CE9AD84
           apt-get update
           pip install -r requirements.txt
           dvc pull boston.csv
