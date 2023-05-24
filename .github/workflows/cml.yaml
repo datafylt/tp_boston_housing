@@ -13,13 +13,14 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
+          dvc init
           dvc pull
           python Boston_regression.py
           # Write your CML report
           echo "## Metriques:" >> report.md
           cat metrics.txt >> report.md
-          git config --global user.email "marzaq6@gmail.com"
-          git config --global user.name "MarzaqMed"
+          git config --global user.email "datafylt@gmail.com"
+          git config --global user.name "datafylt"
           git add report.md metrics.txt
           git commit -m "reports"
           git fetch
