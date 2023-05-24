@@ -16,8 +16,8 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Charger le data
 #data = pd.read_csv('boston.csv')
-#data = pd.read_csv('remote://mondataremote/boston.csv.dvc')
-data = pd.read_csv('boston.csv.dvc')
+data = pd.read_csv('remote://mondataremote/boston.csv.dvc')
+#data = pd.read_csv('boston.csv.dvc')
 
 
 # In[7]:
