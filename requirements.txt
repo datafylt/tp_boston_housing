@@ -4,4 +4,4 @@ matplotlib
 seaborn
 numpy
 dvc
- 
+dvc[gdrive]
