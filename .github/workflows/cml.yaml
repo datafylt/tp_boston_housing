@@ -13,8 +13,7 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
-          dvc init
-          dvc pull
+          dvc pull -f
           python Boston_regression.py
           # Write your CML report
           echo "## Metriques:" >> report.md
