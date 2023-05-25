@@ -3,3 +3,4 @@
     autostage = true
 ['remote "mondataremote"']
     url = gdrive://1SbtJR8tm5RNVt8jSMohHYaWCOKHXzEhU
+    gdrive_acknowledge_abuse = true
