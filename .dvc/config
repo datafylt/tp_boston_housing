@@ -1,6 +1,8 @@
 [core]
-    remote = mondataremote
+    remote = myremote
     autostage = true
-['remote "mondataremote"']
-    url = gdrive://1SbtJR8tm5RNVt8jSMohHYaWCOKHXzEhU
+['remote "myremote"']
+    url = gdrive://10RhMxfheOzxQ-o9WSiwS5H0_af1xuzNf
     gdrive_acknowledge_abuse = true
+    gdrive_client_id = 543037340815-5spc6gs2clbe239ubbf9h71ifqqgu302.apps.googleusercontent.com
+    gdrive_client_secret = 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
