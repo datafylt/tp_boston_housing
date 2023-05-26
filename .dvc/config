@@ -6,6 +6,4 @@
     gdrive_acknowledge_abuse = true
     gdrive_client_id = 543037340815-5spc6gs2clbe239ubbf9h71ifqqgu302.apps.googleusercontent.com
     gdrive_client_secret = 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
-    gdrive_user_credentials_file = ../Dev_Githubmycredentials.json
-    gdrive_use_service_account = true
-    gdrive_service_account_user_email = service-boston-housing@sanguine-orb-387822.iam.gserviceaccount.com
+    
