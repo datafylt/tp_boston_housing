@@ -12,7 +12,11 @@ jobs:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.ORIGINAL_SERVICE_ACCOUNT_JSON }}
 
         run: |
+          dvc init
+          dvc remote add origin gdrive://root
+          dvc remote modify origin --local gdrive_use_service_account true
           # Your ML workflow goes here
+          
           pip install -r requirements.txt
           dvc pull
           python Boston_regression.py
