@@ -1,4 +1,4 @@
 outs:
 - md5: 4a383b58c6fc7b8ec040a58ae4624fb9
-  size: 41866
+  size: 41359
   path: boston.csv
