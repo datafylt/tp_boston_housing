@@ -12,7 +12,6 @@ jobs:
 
         run: |
           # Your ML workflow goes here
-          cp default.json /github/home/.cache/pydrive2fs/543037340815-5spc6gs2clbe239ubbf9h71ifqqgu302.apps.googleusercontent.com/default.json 
           pip install -r requirements.txt
           dvc pull
           python Boston_regression.py
