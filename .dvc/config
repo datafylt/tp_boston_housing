@@ -4,3 +4,4 @@
     url = gdrive://10RhMxfheOzxQ-o9WSiwS5H0_af1xuzNf
     gdrive_use_service_account = true
     gdrive_service_account_user_email = serviceacout-bostonhousing@sanguine-orb-387822.iam.gserviceaccount.com
+    gdrive_service_account_json_file_path = D:/Dev_Github/service_account.json
