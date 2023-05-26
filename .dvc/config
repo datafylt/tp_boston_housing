@@ -9,4 +9,4 @@
     gdrive_trash_only = true
     gdrive_user_credentials_file = ../Dev_Githubmycredentials.json
     gdrive_use_service_account = true
-    gdrive_service_account_user_email = marzaq6@gmail.com
+    gdrive_service_account_user_email = service-boston-housing@sanguine-orb-387822.iam.gserviceaccount.com

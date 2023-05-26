@@ -9,7 +9,7 @@ jobs:
       - name: cml_run
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          
+
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
@@ -18,8 +18,8 @@ jobs:
           # Write your CML report
           echo "## Metriques:" >> report.md
           cat metrics.txt >> report.md
-          git config --global user.email "datafylt@gmail.com"
-          git config --global user.name "datafylt"
+          git config --global user.email "marzaq6@gmail.com"
+          git config --global user.name "MarzaqMed"
           git add report.md metrics.txt
           git commit -m "reports"
           git fetch
